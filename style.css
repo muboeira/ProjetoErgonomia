@@ -1,0 +1,37 @@
+.editor {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  font: 14px arial;
+resize: none;
+}
+
+.htmlEditor {
+height: 200px;
+}
+.cssEditor {
+  height: 200px;
+}
+.jsEditor {
+  height: 200px;
+}
+
+#htmlEditor {
+  background: #eafec1;
+}
+#cssEditor {
+  background: #e0e5ff;
+}
+#jsEditor {
+  background: #b7febe;
+}
+
+.preview {
+height: 200px;
+}
+#preview {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
