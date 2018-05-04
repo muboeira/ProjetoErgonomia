@@ -8,13 +8,18 @@ resize: none;
 }
 
 .htmlEditor {
-height: 200px;
+height: 150px;
+
 }
 .cssEditor {
-  height: 200px;
+  height: 150px;
+  padding-top: 10px;
+  padding-right: 6px;
 }
 .jsEditor {
-  height: 200px;
+  height: 150px;
+  padding-top: 10px;
+  padding-right: 6px;
 }
 
 #htmlEditor {
