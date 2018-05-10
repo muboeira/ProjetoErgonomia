@@ -9,12 +9,25 @@ h1{
     text-align: center;
     color:#7952b3;
 }
-p{
+.subtitle{
     text-align:center;
     font-size: 22px;
-    padding: 10%;
+    padding: 5%;
 }
+
 
 body{
     padding: 1%;
 }
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width: 92%;
+    height:190px;   /* Height of the footer */
+    font-size: 22px;
+
+ }
+ .tecnologias{
+     font-size: 15px;
+ }
