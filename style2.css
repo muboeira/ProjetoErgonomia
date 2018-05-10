@@ -1,0 +1,16 @@
+img{
+    width: 75%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+    text-align: center;
+    color:#7952b3;
+}
+
+
+body{
+    padding: 1%;
+}
