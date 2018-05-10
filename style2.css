@@ -9,7 +9,11 @@ h1{
     text-align: center;
     color:#7952b3;
 }
-
+p{
+    text-align:center;
+    font-size: 22px;
+    padding: 10%;
+}
 
 body{
     padding: 1%;
