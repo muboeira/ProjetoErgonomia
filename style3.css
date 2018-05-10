@@ -1,0 +1,32 @@
+img{
+    width: 75%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1{
+    text-align: center;
+}
+.subtitle{
+    text-align:center;
+    font-size: 22px;
+    padding: 5%;
+}
+
+
+body{
+    padding: 1%;
+}
+
+
+ .tecnologias{
+     font-size: 15px;
+ }
+
+ .return{
+     margin: 2%;
+ }
+ .next{
+     margin: 2%;
+ }
