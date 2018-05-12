@@ -20,10 +20,10 @@ body{
     padding: 1%;
 }
 
-.footer {
+.bottom-page {
     position:absolute;
     bottom:0;
-    width: 92%;
+    width: 79%;
     height:190px;   /* Height of the footer */
     font-size: 22px;
 
