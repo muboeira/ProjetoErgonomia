@@ -6,37 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Introdução ao Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="style4.css">
     <style>
       
-         .affix {
+ 
+      .affix {
       top: 20px;
       z-index: 9999 !important;
   }
+
+
   
+
+
         </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15">
 
-    <div class="wrapper">
+
         <!-- Sidebar Holder -->
         <div class="container">
             <div class="row">
-                <nav class="col-sm-3">
-                        <ul class="" data-spy="affix" data-offset-top="205">
-                                <li><a id = "amb-devlink" href="#">Ambiente de Desenvolvimento</a></li>
-                                <li><a id = "html-csslink" href="#">HTML e CSS</a></li>
-                                <li><a id = "bootslink" href="#">Bootstrap</a></li>
-                                <li><a id = "impl-bootslink" href="#">Implementação do Bootstrap</a></li>
-                                <li><a id = "sis-gridlink" href="#">Sistema de Grid</a></li>
-                                <li><a id = "try-itlink" href="#">Try It</a></li>
-                                <li><a id = "conclusaolink" href="#">Conclusão</a></li>
-                                <li><a id = "aval-contlink" href="#">Avaliação do Conteúdo</a></li>
+                <nav class="col-sm-3" id="myScrollspy">
+                        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+                                <li><a id = "amb-devlink" href="#amb-dev">Ambiente de Desenvolvimento</a></li>
+                                <li><a id = "html-csslink" href="#html-css">HTML e CSS</a></li>
+                                <li><a id = "bootslink" href="#boots">Bootstrap</a></li>
+                                <li><a id = "impl-bootslink" href="#impl-boots">Implementação do Bootstrap</a></li>
+                                <li><a id = "sis-gridlink" href="#sis-grid">Sistema de Grid</a></li>
+                                <li><a id = "try-itlink" href="#try-it">Try It</a></li>
+                                <li><a id = "conclusaolink" href="#conclusao">Conclusão</a></li>
+                                <li><a id = "aval-contlink" href="#aval-cont">Avaliação do Conteúdo</a></li>
                         </ul>
                       </nav>
             <div class="col-sm-9">
@@ -217,7 +221,7 @@
             </div>
             </div>
         </div>
-    </div>
+
     <script src="script.js"></script>
     <!-- jQuery CDN -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -311,6 +315,7 @@
         goToByScroll($(this).attr("id"));           
     });
     </script>
+    <script></script>
 </body>
 
 </html>
