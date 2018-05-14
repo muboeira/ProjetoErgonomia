@@ -16,12 +16,31 @@
       .affix {
       top: 20px;
       z-index: 9999 !important;
+
   }
 
 
-  
+.w3-button{
+    position: fixed;
+    z-index: 9999 !important;
+}
 
+li{
+    background-color: blueviolet;
+}
 
+ @media (min-width:500px) {
+
+/* your conditional / responsive CSS inside this condition */
+
+.w3-button{
+    display: none;
+}
+
+#trigger{
+    display: none;
+}
+}
         </style>
 </head>
 
@@ -30,9 +49,11 @@
 
         <!-- Sidebar Holder -->
         <div class="container">
+                <button class="w3-button w3-teal w3-xlarge" id= "w3-open-button" onclick="w3_open()">☰</button>
             <div class="row">
                 <nav class="col-sm-3" id="myScrollspy">
                         <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="205">
+                                <li><button onclick="w3_close()" id="trigger" class="w3-bar-item w3-large">Close &times;</button></li>
                                 <li><a id = "amb-devlink" href="#amb-dev">Ambiente de Desenvolvimento</a></li>
                                 <li><a id = "html-csslink" href="#html-css">HTML e CSS</a></li>
                                 <li><a id = "bootslink" href="#boots">Bootstrap</a></li>
@@ -45,15 +66,16 @@
                       </nav>
             <div class="col-sm-9">
             <div class="content">
-                <div class="content-h1 col" id="amb-dev">
+                <div class="content-h1 col-md-12" id="amb-dev">
                     <h1>Ambiente de Desenvolvimento</h1>
                 </div>
-                <div class="content-p col">
+                <div class="content-p col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     <br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-4">
                     <a href="index.html" class="return"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
 
@@ -63,133 +85,145 @@
             </div>
 
             <div class="html-css content" id="html-css">
-                <div class="content-h1 col">
+                <div class="content-h1 col-md-12">
                     <h1>HTML e CSS</h1>
                 </div>
-                <div class="content-p col">
+                <div class="content-p col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     <br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
+                        <div class="col-md-10 col-md-offset-4">
+
                     <a id = "amb-devlink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
 
                     <a id = "bootslink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
 
-
+</div>
                 </div>
             </div>
             <div class="boots content" id="boots">
-                <div class="content-h1 col">
+                <div class="content-h1 col-md-12">
                     <h1>Bootstrap</h1>
                 </div>
-                <div class="content-p col">
+                <div class="content-p col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     <br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
+                        <div class="col-md-10 col-md-offset-4">
+
                     <a id = "html-csslink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
 
                     <a id = "impl-bootslink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
 
-
+                        </div>
                 </div>
             </div>
             <div class="impl-boots content" id="impl-boots">
-                <div class="content-h1 col">
+                <div class="content-h1 col-md-12">
                     <h1>Implementação do Bootstrap</h1>
                 </div>
-                <div class="content-p col">
+                <div class="content-p col-md-12">
                     VÍDEO <br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
+                        <div class="col-md-10 col-md-offset-4">
+
                     <a id = "bootslink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
 
                     <a id = "sis-gridlink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
 
-
+                        </div>
                 </div>
             </div>
 
             <div class="sis-grid content" id="sis-grid">
-                <div class="content-h1 col">
+                <div class="content-h1 col-md-12">
                     <h1>Sistema de Grid</h1>
                 </div>
-                <div class="content-p col">
+                <div class="content-p col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     <br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
+                        <div class="col-md-10 col-md-offset-4">
+
                     <a id = "impl-bootslink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
 
                     <a id = "try-itlink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
-
+                        </div>
 
                 </div>
             </div>
 
 
             <div class="try-it content" id="try-it">
-                <div class="content-h1 col">
+                <div class="content-h1 col-md-12">
                     <h1>Try It</h1>
                 </div>
                 <div class="row">
-                    <div class="htmlEditor col">
+                    <div class="htmlEditor col-md-12">
                         <textarea id="htmlEditor" class="editor" placeholder="HTML Editor"></textarea>
                     </div>
                     <div class="w-100"></div>
 
-                    <div class="cssEditor col">
+                    <div class="cssEditor col-md-6">
                         <textarea id="cssEditor" class="editor" placeholder="CSS Editor"></textarea>
                     </div>
-                    <div class="jsEditor col">
+                    <div class="jsEditor col-md-6">
                         <textarea id="jsEditor" class="editor" placeholder="JavaScript Editor"></textarea>
                     </div>
                     <div class="w-100"></div>
-                    <div class="preview col">
+                    <div class="preview col-md-12">
                         <iframe id="preview"></iframe>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
+                        <div class="col-md-10 col-md-offset-4">
+
                     <a id = "sis-gridlink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
 
                     <a id = "conclusaolink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
 
-
+                        </div>
                 </div>
             </div>
 
             <div class="conclusao content" id="conclusao">
-                <div class="content-h1 col">
+                <div class="content-h1 col-md-12">
                     <h1>Conclusão</h1>
                 </div>
-                <div class="content-p col">
+                <div class="content-p col-md-12">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                     in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     <br><br><br><br><br><br><br><br><br>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row">
+                        <div class="col-md-10 col-md-offset-4">
+
                     <a id = "try-itlink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
 
                     <a id = "aval-contlink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
 
-
+                        </div>
                 </div>
             </div>
 
             <div class="aval-cont content" id="aval-cont">
-                <div class="content-h1 col">
+                <div class="content-h1 col-md-12">
                     <h1>Avaliação do Conteúdo</h1>
                 </div>
-                <div class="content-p col">
+                <div class="content-p col-md-12">
                     Pergunta
                 </div>
                 <form>
@@ -208,13 +242,15 @@
                     <div class="radio">
                         <label><input type="radio" name="optradio" >Option 5</label>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row">
+                            <div class="col-md-10 col-md-offset-4">
+
                         <a id = "conclusaolink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
     
                         <a class="next"><button type="button" class="btn btn-success">Finalizar</button></a>
     
-    
+                            </div>
                     </div>
                 </form>
             </div>
@@ -236,69 +272,7 @@
     </script>
 
     <script>
-        /*function scrollToAnchor(aid){
-                var aTag = $("div[class='"+ aid +"']");
-                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-            }
-            
-            $("#link-1").click(function() {
-               scrollToAnchor('html-css content');
-            });
-
-             function scrollToAnchor(aid){
-                var aTag = $("div[class='"+ aid +"']");
-                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-            }
-            
-            $("#link-2").click(function() {
-               scrollToAnchor('boots content');
-            });
-
-             function scrollToAnchor(aid){
-                var aTag = $("div[class='"+ aid +"']");
-                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-            }
-            
-            $("#link-3").click(function() {
-               scrollToAnchor('impl-boots content');
-            });
-
-             function scrollToAnchor(aid){
-                var aTag = $("div[class='"+ aid +"']");
-                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-            }
-            
-            $("#link-4").click(function() {
-               scrollToAnchor('sis-grid content');
-            });
-
-             function scrollToAnchor(aid){
-                var aTag = $("div[class='"+ aid +"']");
-                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-            }
-            
-            $("#link-5").click(function() {
-               scrollToAnchor('try-it content');
-            });
-
-             function scrollToAnchor(aid){
-                var aTag = $("div[class='"+ aid +"']");
-                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-            }
-            
-            $("#link-6").click(function() {
-               scrollToAnchor('conclusao content');
-            });
-
-             function scrollToAnchor(aid){
-                var aTag = $("div[class='"+ aid +"']");
-                $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-            }
-            
-            $("#link-7").click(function() {
-               scrollToAnchor('avalia-cont content');
-            });
-*/
+       
                 function goToByScroll(id){
           // Reove "link" from the ID
         id = id.replace("link", "");
@@ -315,7 +289,18 @@
         goToByScroll($(this).attr("id"));           
     });
     </script>
-    <script></script>
+<script>
+        function w3_open() {
+            document.getElementById("myScrollspy").style.display = "block";
+            document.getElementById("w3-open-button").style.display = "none";
+        }
+        function w3_close() {
+            document.getElementById("myScrollspy").style.display = "none";
+            document.getElementById("w3-open-button").style.display = "block";
+
+            
+        }
+        </script>
 </body>
 
 </html>
