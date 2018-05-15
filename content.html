@@ -2,7 +2,544 @@
 <html>
 
 <head>
+    <meta charset="utf-8" /><!DOCTYPE html>
+<html>
+
+<head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Introdução ao Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="style4.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
+
+    <!-- Sidebar Holder -->
+    <div class="row">
+                <div class="col-2 offset-md-1">
+                <a href="https://getbootstrap.com/" target="_blank"><img src="images/logo-bootstrap.png" alt="logobt"></a>
+            </div> 
+            <div class="col-6 offset-md-2">  <h1 class="page-title">Introdução ao Bootstrap</h1>
+
+            </div></div>
+    <div class="container">
+        <div class="row">
+
+                        <nav id="myScrollspy" class="topbar navbar navbar-expand-md navbar-light fixed-top bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="amb-devlink" href="#amb-dev">Ambiente de Desenvolvimento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="html-csslink" href="#html-css">HTML e CSS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bootslink" href="#boots">Bootstrap</a>
+                            </i>
+                            <li class="nav-item">
+                                    <a class="nav-link" id="impl-bootslink" href="#impl-boots">Implementação do Bootstrap</a>
+                                </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" id="sis-gridlink" href="#sis-grid">Sistema de Grid</a>
+                                </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" id="try-itlink" href="#try-it">Try It</a>
+                                </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" id="conclusaolink" href="#conclusao">Conclusão</a>
+                                </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" id="aval-contlink" href="#aval-cont">Avaliação do Conteúdo</a>
+                                </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+            <nav class="sidebar col-sm-3 col-4" id="myScrollspy">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="amb-devlink" href="#amb-dev">Ambiente de Desenvolvimento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="html-csslink" href="#html-css">HTML e CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="bootslink" href="#boots">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="impl-bootslink" href="#impl-boots">Implementação do Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sis-gridlink" href="#sis-grid">Sistema de Grid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="try-itlink" href="#try-it">Try It</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="conclusaolink" href="#conclusao">Conclusão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="aval-contlink" href="#aval-cont">Avaliação do Conteúdo</a>
+                    </li>
+
+                </ul>
+            </nav>
+            <div class="col-sm-9">
+                <div class="content">
+                    <div class="content-h1 col-md-12" id="amb-dev">
+                      <hr>
+                        <h1>Ambiente de Desenvolvimento</h1>
+                    </div>
+                    <div class="content-p col-md-12">
+                        Para rodar a sua aplicação com o Bootstrap é necessário um Ambiente de Desenvolvimento e um Navegador WEB. Abaixo, daremos algumas recomendações para você utilizar em seu computador.
+                        <br><br>Editor de Texto:
+                        <br><br>Visual Studio Code: <a href= "https://code.visualstudio.com/" style="color: #4272DB" target ="_blank">https://code.visualstudio.com/</a> 
+                        <br>ou
+                        <br>NotePad++: <a href= "https://www.notepad-plus-plus.org/download/v7.5.6.html" style="color: #4272DB" target ="_blank">www.notepad-plus-plus.org/download/v7.5.6.html</a>
+                        <br><br>Navegador WEB: 
+                        <br><br>Google Chrome: <a href= "https://www.google.com.br/chrome/" style="color: #4272DB" target ="_blank">www.google.com.br/chrome/</a>
+                        <br>ou
+                        <br>Mozilla Firefox: <a href= "https://www.mozilla.org/pt-BR/firefox/new/" style="color: #4272DB" target ="_blank">www.mozilla.org/pt-BR/firefox/new/</a>
+                        <br><br>
+                    </div>
+                    <div class="row justify-content-center">
+
+                        <a href="main.html" id="returner" class="return"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+
+
+                        <a id="html-csslink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
+
+                    </div>
+
+
+                    <div class="html-css content" id="html-css">
+                        <div class="content-h1 col-md-12">
+                            <h1>HTML e CSS</h1>
+                        </div>
+                        <div class="content-p col-md-12">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <br><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <a id="amb-devlink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+
+
+                            <a id="bootslink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
+
+                        </div>
+                    </div>
+                    <div class="boots content" id="boots">
+                        <div class="content-h1 col-md-12">
+                            <h1>Bootstrap</h1>
+                        </div>
+                        <div class="content-p col-md-12">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <br><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <a id="html-csslink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+
+
+                            <a id="impl-bootslink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
+
+                        </div>
+                    </div>
+                    <div class="impl-boots content" id="impl-boots">
+                        <div class="content-h1 col-md-12">
+                            <h1>Implementação do Bootstrap</h1>
+                        </div>
+                        <div class="content-p col-md-12">
+                            VÍDEO <br><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <a id="bootslink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+
+
+                            <a id="sis-gridlink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
+
+                        </div>
+                    </div>
+
+                    <div class="sis-grid content" id="sis-grid">
+                        <div class="content-h1 col-md-12">
+                            <h1>Sistema de Grid</h1>
+                        </div>
+                        <div class="content-p col-md-12">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <br><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <a id="impl-bootslink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+
+
+                            <a id="try-itlink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
+
+                        </div>
+                    </div>
+
+
+                    <div class="try-it content" id="try-it">
+                        <div class="content-h1 col-md-12">
+                            <h1>Try It</h1>
+                        </div>
+                        <div class="row">
+                            <div class="htmlEditor col-md-12">
+                                <textarea id="htmlEditor" class="editor" placeholder="HTML Editor">
+                                    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Grid Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="grid.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <h1>Bootstrap grid examples</h1>
+      <p class="lead">Basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+
+      <h3>Five grid tiers</h3>
+      <p>There are five tiers to the Bootstrap grid system, one for each range of devices we support. Each tier starts at a minimum viewport size and automatically applies to the larger devices unless overridden.</p>
+
+      <div class="row">
+        <div class="col-4">.col-4</div>
+        <div class="col-4">.col-4</div>
+        <div class="col-4">.col-4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-4">.col-sm-4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">.col-lg-4</div>
+        <div class="col-lg-4">.col-lg-4</div>
+        <div class="col-lg-4">.col-lg-4</div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-4">.col-xl-4</div>
+        <div class="col-xl-4">.col-xl-4</div>
+        <div class="col-xl-4">.col-xl-4</div>
+      </div>
+
+      <h3>Three equal columns</h3>
+      <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+
+      <h3>Three unequal columns</h3>
+      <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
+      <div class="row">
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-3">.col-md-3</div>
+      </div>
+
+      <h3>Two columns</h3>
+      <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
+      <div class="row">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+
+      <h3>Full width, single column</h3>
+      <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+
+      <hr>
+
+      <h3>Two columns with two nested columns</h3>
+      <p>Per the documentation, nesting is easy—just put a row of columns within an existing column. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
+      <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
+      <div class="row">
+        <div class="col-md-8">
+          .col-md-8
+          <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+          </div>
+        </div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+
+      <hr>
+
+      <h3>Mixed: mobile and desktop</h3>
+      <p>The Bootstrap v4 grid system has five tiers of classes: xs (extra small), sm (small), md (medium), lg (large), and xl (extra large). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
+      <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
+      <div class="row">
+        <div class="col-12 col-md-8">.col-12 .col-md-8</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+        <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+      </div>
+      <div class="row">
+        <div class="col-6">.col-6</div>
+        <div class="col-6">.col-6</div>
+      </div>
+
+      <hr>
+
+      <h3>Mixed: mobile, tablet, and desktop</h3>
+      <p></p>
+      <div class="row">
+        <div class="col-12 col-sm-6 col-lg-8">.col-12 .col-sm-6 .col-lg-8</div>
+        <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+      </div>
+
+    </div> <!-- /container -->
+  </body>
+</html>
+
+                                </textarea>
+                            </div>
+                            <div class="w-100"></div>
+
+                            <div class="cssEditor col-md-6">
+                                <textarea id="cssEditor" class="editor" placeholder="CSS Editor">
+                                        body {
+                                            padding-top: 2rem;
+                                            padding-bottom: 2rem;
+                                          }
+                                          
+                                          h3 {
+                                            margin-top: 2rem;
+                                          }
+                                          
+                                          .row {
+                                            margin-bottom: 1rem;
+                                          }
+                                          .row .row {
+                                            margin-top: 1rem;
+                                            margin-bottom: 0;
+                                          }
+                                          [class*="col-"] {
+                                            padding-top: 1rem;
+                                            padding-bottom: 1rem;
+                                            background-color: rgba(86, 61, 124, .15);
+                                            border: 1px solid rgba(86, 61, 124, .2);
+                                          }
+                                          
+                                          hr {
+                                            margin-top: 2rem;
+                                            margin-bottom: 2rem;
+                                          }
+                                          
+                                </textarea>
+                            </div>
+                            <div class="jsEditor col-md-6">
+                                <textarea id="jsEditor" class="editor" placeholder="JavaScript Editor"></textarea>
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="preview col-md-12">
+                                <iframe id="preview"></iframe>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <a id="sis-gridlink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+
+
+                            <a id="conclusaolink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
+
+                        </div>
+                    </div>
+
+                    <div class="conclusao content" id="conclusao">
+                        <div class="content-h1 col-md-12">
+                            <h1>Conclusão</h1>
+                        </div>
+                        <div class="content-p col-md-12">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <br><br><br><br><br><br><br><br><br>
+                        </div>
+                        <div class="row justify-content-center">
+
+                            <a id="try-itlink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+
+
+                            <a id="aval-contlink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
+
+                        </div>
+                    </div>
+
+                    <div class="aval-cont content" id="aval-cont">
+                        <div class="content-h1 col-md-12">
+                            <h1>Avaliação do Conteúdo</h1>
+                        </div>
+                        <div class="content-p col-md-12">
+                            Pergunta
+                        </div>
+                        <form>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio">Option 1</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio">Option 2</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio">Option 3</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" >Option 4</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="optradio" >Option 5</label>
+                            </div>
+                            <div class="content-p col-md-12">
+                                Pergunta
+                            </div>
+                            <form>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">Option 1</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">Option 2</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">Option 3</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio" >Option 4</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio" >Option 5</label>
+                                </div>
+                                <div class="content-p col-md-12">
+                                    Pergunta
+                                </div>
+                                <form>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Option 1</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Option 2</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Option 3</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" >Option 4</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" >Option 5</label>
+                                    </div>
+                                    <div class="content-p col-md-12">
+                                        Pergunta
+                                    </div>
+                                    <form>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Option 1</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Option 2</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Option 3</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" >Option 4</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" >Option 5</label>
+                                        </div>
+                                        <div class="content-p col-md-12">
+                                            Pergunta
+                                        </div>
+                                        <form>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio">Option 1</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio">Option 2</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio">Option 3</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio" >Option 4</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio" >Option 5</label>
+                                            </div>
+                                                
+                            <div class="row justify-content-center">
+
+                                <a id="conclusaolink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+
+
+                                <a class="next"><button type="button" class="btn btn-success">Finalizar</button></a>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="script2.js"></script>
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+
+
+</body>
+
+</html>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Introdução ao Bootstrap</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
