@@ -18,3 +18,42 @@
 #myScrollspy{
     padding-top: 2%;
 }
+
+body{
+    position: relative;
+}
+ul.nav-pills {
+   top: 20px;
+   position: fixed;
+}
+
+
+@media (min-width:800px) {
+/* your conditional / responsive CSS inside this condition */
+.sidebar{
+ display: block;
+}
+.topbar{
+ display: none;
+}
+}
+@media (max-width:800px) {
+/* your conditional / responsive CSS inside this condition */
+.content{
+ padding-top: 20%;
+}
+.sidebar{
+ display: none;
+}
+.topbar{
+ display: block;
+}
+
+}
+
+img{
+    width: 75%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -13,39 +13,7 @@
 
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" href="style4.css">
-    <style>
-        body{
-               position: relative;
-           }
-           ul.nav-pills {
-              top: 20px;
-              position: fixed;
-          }
 
-
-          @media (min-width:800px) {
-        /* your conditional / responsive CSS inside this condition */
-        .sidebar{
-            display: block;
-        }
-        .topbar{
-            display: none;
-        }
-        }
-          @media (max-width:800px) {
-        /* your conditional / responsive CSS inside this condition */
-        .content{
-            padding-top: 20%;
-        }
-        .sidebar{
-            display: none;
-        }
-        .topbar{
-            display: block;
-        }
-
-        }
-    </style>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="1">
@@ -53,6 +21,11 @@
 
     <!-- Sidebar Holder -->
     <div class="container">
+        <div class "row">
+                <div class="col-2">
+                        <a href="https://getbootstrap.com/" target="_blank"><img src="images/logo-bootstrap.png" alt="logobt"></a>
+                    </div>
+        </div>
         <div class="row">
             <nav id="myScrollspy" class="topbar navbar navbar-expand-md navbar-light fixed-top bg-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -137,7 +110,7 @@
                     </div>
                     <div class="row justify-content-center">
 
-                        <a href="index.html" class="return"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
+                        <a href="main.html" id="returner" class="return"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
 
 
                         <a id="html-csslink" href="#" class="next"><button type="button" class="btn btn-success">Próximo ></button></a>
@@ -458,6 +431,83 @@
                             <div class="radio">
                                 <label><input type="radio" name="optradio" >Option 5</label>
                             </div>
+                            <div class="content-p col-md-12">
+                                Pergunta
+                            </div>
+                            <form>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">Option 1</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">Option 2</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio">Option 3</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio" >Option 4</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="optradio" >Option 5</label>
+                                </div>
+                                <div class="content-p col-md-12">
+                                    Pergunta
+                                </div>
+                                <form>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Option 1</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Option 2</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio">Option 3</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" >Option 4</label>
+                                    </div>
+                                    <div class="radio">
+                                        <label><input type="radio" name="optradio" >Option 5</label>
+                                    </div>
+                                    <div class="content-p col-md-12">
+                                        Pergunta
+                                    </div>
+                                    <form>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Option 1</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Option 2</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio">Option 3</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" >Option 4</label>
+                                        </div>
+                                        <div class="radio">
+                                            <label><input type="radio" name="optradio" >Option 5</label>
+                                        </div>
+                                        <div class="content-p col-md-12">
+                                            Pergunta
+                                        </div>
+                                        <form>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio">Option 1</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio">Option 2</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio">Option 3</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio" >Option 4</label>
+                                            </div>
+                                            <div class="radio">
+                                                <label><input type="radio" name="optradio" >Option 5</label>
+                                            </div>
+                                                
                             <div class="row justify-content-center">
 
                                 <a id="conclusaolink" href="#" class="next"><button type="button" class="btn btn-danger">&lt;Voltar</button></a>
@@ -473,28 +523,12 @@
         </div>
 
         <script src="script.js"></script>
+        <script src="script2.js"></script>
+
         <!-- jQuery CDN -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <!-- Bootstrap Js CDN -->
 
-
-        <script>
-            function goToByScroll(id){
-          // Reove "link" from the ID
-        id = id.replace("link", "");
-          // Scroll
-        $('html,body').animate({
-            scrollTop: $("#"+id).offset().top},
-            'slow');
-    }
-
-    $("a").click(function(e) { 
-          // Prevent a page reload when a link is pressed
-        e.preventDefault(); 
-          // Call the scroll function
-        goToByScroll($(this).attr("id"));           
-    });
-        </script>
 
 </body>
 
